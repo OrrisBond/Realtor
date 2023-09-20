@@ -1,0 +1,74 @@
+.props-cont {
+  padding: 20px;
+}
+
+.props-cont h1 {
+  color: rgb(34, 33, 33);
+}
+
+.prop-cont {
+  background-color: #ffffff;
+  box-shadow: 5px 6px 7px #88888829;
+  width: 500px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.prop-cont img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.top {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.422);
+  padding: 0 10px;
+}
+
+.top h2 {
+  font-size: large;
+  margin-bottom: 0px;
+}
+
+.top p {
+  margin-top: 2px;
+  font-size: smaller;
+  color: gray;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.essentials {
+  display: flex;
+  flex-direction: column;
+  font-size: x-small;
+}
+
+.essentials h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.quant {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+
+.quant p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.essentials h3 {
+  color: rgb(86, 86, 86);
+}
+
+.quant :nth-child(1) {
+  margin-right: 5px;
+}

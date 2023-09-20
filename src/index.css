@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(240, 245, 249);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.background {
+  background-image: url(../public/heroImg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 600px;
+}
+
+.slider {
+  display: flex;
+}

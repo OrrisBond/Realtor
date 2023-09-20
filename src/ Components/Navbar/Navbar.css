@@ -1,0 +1,46 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+  color: white;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.629);
+}
+
+.navBar img {
+  width: 150px;
+  height: 50px;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+  height: 100%;
+}
+
+.pages a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.918);
+}
+
+.pages a.active {
+  color: white;
+}
+
+.contactPg {
+  border: 1px solid white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all ease 1s;
+}
+
+.contactPg a {
+  color: white;
+  text-decoration: none;
+}
+
+.contactPg:hover {
+  background-color: rgba(255, 0, 0, 0.937);
+}
