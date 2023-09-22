@@ -16,6 +16,29 @@
   padding-bottom: 20px;
   margin-right: 20px;
   border-radius: 15px;
+  transition: all .3s ease;
+  overflow: hidden;
+}
+
+.top-txt {
+  text-align: right;
+  background-color: lightcyan;
+}
+
+.prop-cont:hover {
+  box-shadow: 5px 10px 5px #88888829;
+  transform: translateY(-10px);
+}
+
+.prop-cont:hover img {
+  transform: scale(1.05);
+}
+
+.image-cont {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  
 }
 
 .prop-cont img {
