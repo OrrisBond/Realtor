@@ -1,29 +1,32 @@
 .props-cont {
-  padding: 20px;
+  width: 100vw;
+  margin: 70px 0px;
 }
 
 .props-cont h1 {
+  font-size: 24px;
   color: rgb(34, 33, 33);
+  margin-bottom: 50px;
 }
 
 .prop-cont {
   background-color: #ffffff;
   box-shadow: 5px 6px 7px #88888829;
-  width: 500px;
+  width: 100%;
   padding-bottom: 20px;
   margin-right: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .prop-cont img {
   width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .top {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.422);
-  padding: 0 10px;
+  padding: 0 30px;
 }
 
 .top h2 {
@@ -41,6 +44,7 @@
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  padding: 0 10px;
 }
 
 .essentials {

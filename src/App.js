@@ -1,3 +1,4 @@
+import Footer from "./ Components/Footer/Footer";
 import Hero from "./ Components/Hero/Hero";
 import Navbar from "./ Components/Navbar/Navbar";
 import PropCards from "./ Components/PropCards/PropCards";
@@ -10,6 +11,8 @@ function App() {
         <Hero />
       </div>
       <PropCards />
+
+      <Footer />
     </div>
   );
 }

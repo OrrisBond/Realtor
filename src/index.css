@@ -1,9 +1,13 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(240, 245, 249);
+  height: 100vh;
+  position: relative;
 }
 
 code {
@@ -12,11 +16,17 @@ code {
 }
 
 .background {
-  background-image: url(../public/heroImg.jpeg);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.787)
+    ),
+    url(../public/heroImg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  width: 100vw;
   min-height: 600px;
+  margin-bottom: 20px;
 }
 
 .slider {
