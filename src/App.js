@@ -11,6 +11,8 @@ function App() {
         <Hero />
       </div>
       <PropCards />
+      <PropCards />
+      <PropCards />
 
       <Footer />
     </div>

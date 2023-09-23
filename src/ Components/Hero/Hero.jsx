@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BiSearch } from 'react-icons/bi'
 import './Hero.css'
 
 const Hero = () => {
+  const [clicked , setClicked] = useState(true)
+
+  const clickMe = () => {
+      setClicked(!clicked)
+  }
+
   return (
       <div className='hero-cont'>
           <div>
@@ -11,12 +17,12 @@ const Hero = () => {
           </div>
           <div className='searchBar'>
               <div>
-                  <button className='left clicked'>Buy</button>
-                  <button className='right'>Rent</button>
+                  <button className={clicked ? 'left clicked' : 'left'} onClick={clickMe}>Buy</button>
+                  <button className={clicked ? 'right ' : 'right clicked'} onClick={clickMe}>Rent</button>
               </div>
               <div className='searchInput'>
               <BiSearch className='searchIcon'/>
-                  <input type="text" />
+                  <input type="text"  placeholder='Address, City, Zip, Or Neighborhood'/>
                   <button>Search</button>
              </div>
           </div>
