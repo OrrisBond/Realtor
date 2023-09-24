@@ -9,7 +9,8 @@ import { HouseContext } from "../FillterBar/HouseContextProvider";
 
 
 const HouseList = () => {
-  const { houses, loading } = useContext(HouseContext)
+  const { houses, loading, country } = useContext(HouseContext)
+  const numbers = houses.length
   
   if (loading) {
      return (<ImSpinner2 />)
@@ -19,8 +20,11 @@ const HouseList = () => {
   if (houses.length < 1) {
     return <div >Sorry, nothing found</div>
   }
-  return <section >
-    <div >
+  return <div  >
+    <div className="property-container">
+    <h1>{country} real Estate Properties for sale</h1>
+      <p>Properties Found {numbers}</p>
+      </div>
       <div  className="container">
         {houses.map((house, index) => {
           return (
@@ -29,7 +33,6 @@ const HouseList = () => {
         })}
     </div>
     </div>
-  </section>;
 };
 
 export default HouseList;
