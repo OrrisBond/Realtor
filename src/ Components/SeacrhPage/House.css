@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.props-cont h1 {
+  font-size: 24px;
+  color: rgb(34, 33, 33);
+  margin-bottom: 0px;
+}
+
+.view {
+  margin-top: 0px;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: underline;
+  color: rgb(60, 59, 59);
+  margin-bottom: 50px;
+}
+
+.house-cont {
+  background-color: #ffffff;
+  box-shadow: 5px 6px 7px #88888829;
+  width: 22%;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.house-cont:hover {
+  box-shadow: 5px 10px 5px #88888829;
+  transform: translateY(-10px);
+}
+
+.house-cont:hover img {
+  transform: scale(1.05);
+}
+
+.image-container {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.img-cont {
+  position: relative;
+}
+
+.img-cont h3 {
+  position: absolute;
+  left: 8px;
+  font-size: small;
+  background-color: rgb(1, 77, 77);
+  color: white;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
