@@ -60,3 +60,16 @@
   border-radius: 15px;
   padding: 5px 10px;
 }
+
+.property-container {
+  width: 95%;
+  margin: 50px auto;
+}
+
+.property-container h1 {
+  margin-bottom: 0px;
+}
+
+.property-container p {
+  margin-top: 0px;
+}
