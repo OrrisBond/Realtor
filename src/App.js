@@ -1,7 +1,10 @@
 import Footer from "./ Components/Footer/Footer";
 import Hero from "./ Components/Hero/Hero";
+import Home from "./ Components/Home";
 import Navbar from "./ Components/Navbar/Navbar";
 import PropCards from "./ Components/PropCards/PropCards";
+import { Routes, Route } from "react-router-dom";
+import SearchHome from "./ Components/SeacrhPage/SearchHome";
 
 function App() {
   return (
@@ -10,8 +13,10 @@ function App() {
         <Navbar />
         <Hero />
       </div>
-      <PropCards />
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="searchHome" element={<SearchHome />} />
+      </Routes>
       <Footer />
     </div>
   );
