@@ -1,12 +1,22 @@
 .props-cont {
-  width: 100vw;
-  margin: 70px 0px;
+  width: 95%;
+  font-family: 'Laila', sans-serif;
+  margin: 70px auto;
+}
+
+.props-header {
+  margin-bottom: 20px;
+}
+
+.props-header p{
+  font-size: 15px;
+  margin-top: 5px;
 }
 
 .props-cont h1 {
+  margin: 0;
   font-size: 24px;
   color: rgb(34, 33, 33);
-  margin-bottom: 50px;
 }
 
 .prop-cont {
@@ -45,6 +55,7 @@
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  transition: all .5s ease;
 }
 
 .top {
@@ -54,7 +65,22 @@
 
 .top h2 {
   font-size: large;
-  margin-bottom: 0px;
+  margin: 0px;
+}
+
+.top h4 {
+  margin: 10px 0;
+}
+
+.top h4 span{
+  margin: 15px 0;
+  background-color: khaki;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.top h4 span.state {
+  background-color: rgb(221, 164, 145);
 }
 
 .top p {

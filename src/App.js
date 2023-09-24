@@ -1,7 +1,7 @@
-import Footer from "./ Components/Footer/Footer";
-import Hero from "./ Components/Hero/Hero";
-import Navbar from "./ Components/Navbar/Navbar";
-import PropCards from "./ Components/PropCards/PropCards";
+import Footer from "./Components/Footer/Footer";
+import Hero from "./Components/Hero/Hero";
+import Navbar from "./Components/Navbar/Navbar";
+import PropCards from "./Components/PropCards/PropCards";
 
 function App() {
   return (
@@ -10,7 +10,9 @@ function App() {
         <Navbar />
         <Hero />
       </div>
-      <PropCards />
+      <PropCards title="Properties Under $452,600"/>
+      <PropCards title="Newest Properties"/>
+      <PropCards title="Affordable Properties"/>
 
       <Footer />
     </div>

@@ -4,6 +4,8 @@ import {FaTwitter, FaFacebookF , FaGooglePlusG, FaLinkedin, FaYoutube} from 'rea
 
 
 const Footer = () => {
+
+  const date = new Date().getFullYear()
   return (
     <footer>
         <div className="footer-content">
@@ -18,7 +20,7 @@ const Footer = () => {
             </ul>
         </div>
         <div class="footer-bottom">
-            <p>copyright &copy; <a href="#">Micro Genesis</a>  </p>
+            <p>copyright &copy; {date} <a href="#">Micro Genesis</a>  </p>
                     <div class="footer-menu">
                       <ul class="f-menu">
                         <li><a href="">Home</a></li>

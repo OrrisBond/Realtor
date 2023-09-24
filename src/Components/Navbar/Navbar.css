@@ -23,10 +23,15 @@
 .pages a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.918);
+  transition: all .3s ease;
 }
 
 .pages a.active {
   color: white;
+}
+
+.pages a:hover {
+  text-decoration: underline;
 }
 
 .contactPg {
