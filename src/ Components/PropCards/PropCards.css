@@ -25,7 +25,7 @@
   padding-bottom: 20px;
   margin-right: 20px;
   border-radius: 15px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   overflow: hidden;
 }
 
@@ -47,14 +47,14 @@
   width: 100%;
   max-height: 200px;
   overflow: hidden;
-  
 }
 
-.img-cont {
+.image-cont {
   position: relative;
+  z-index: 20;
 }
 
-.img-cont h3 {
+.image-cont h3 {
   position: absolute;
   left: 8px;
   font-size: small;
@@ -67,6 +67,7 @@
 .badges {
   display: flex;
   padding: 0 23px;
+  position: relative;
 }
 
 .badges h3 {
