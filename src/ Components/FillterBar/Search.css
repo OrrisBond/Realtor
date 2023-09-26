@@ -1,3 +1,4 @@
+
 .dummy-cont {
   padding-top: 150px;
 }
@@ -27,6 +28,7 @@
 .scrolled {
   background-color: white;
   padding: 20px 0;
+
 }
 
 .container-dropdown {
@@ -38,6 +40,7 @@
 
 .selector {
   margin-right: 30px;
+
   margin-left: 20px;
 }
 .dropdown-btn {
@@ -99,3 +102,4 @@
   margin-left: 10px;
   cursor: pointer;
 }
+
