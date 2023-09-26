@@ -5,26 +5,31 @@ import { HouseContext } from './HouseContextProvider'
 import './Search.css'
 
 const CountryDropdown = () => {
-  const { country, setCountry, countries } = useContext(HouseContext)
+  const { country,countries,setCountry,handleClicked} = useContext(HouseContext)
   const [isOpen, setIsOpen] = useState(false)
   return <Menu as='div' className='dropdown relative' >
     <Menu.Button onClick={()=>setIsOpen(!isOpen)} className='dropdown-btn'>
-      <RiMapPinLine className='dropdown-icon-primary' />
+      <RiMapPinLine className='dropdown-icon' />
       <div className='container-dropdown'>
         <div className='selector'>
-        <div className='text-[15px] font-medium leading-tight'>{country}</div>
-        <div className='text-[13px]'>Select your place</div>
+        <div >{country}</div>
+        <div >Select your place</div>
         </div>
-        {isOpen ? (<RiArrowUpSLine className='dropdown-icon-secondary'/>) : (<RiArrowDownSLine className='dropdown-icon-secondary'/>)}
+        {isOpen ? (<RiArrowUpSLine className='dropdown-icon'/>) : (<RiArrowDownSLine className='dropdown-icon'/>)}
       </div>
     </Menu.Button>
     <Menu.Items className='dropdown-menu'>
       {countries.map((country, index) => {
         return (
-          <Menu.Item as='li' key={index}
-            onClick={()=>setCountry(country)}>
+          
+            <Menu.Item as='li' key={index}
+            onClick={() => {
+              setCountry(country)
+              handleClicked()
+            }}>
             {country}
           </Menu.Item>
+      
         )
       })}
     </Menu.Items>

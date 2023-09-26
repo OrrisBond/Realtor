@@ -1,15 +1,19 @@
 .navBar {
   display: flex;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
   justify-content: space-between;
-  padding: 20px 30px;
   align-items: center;
   color: white;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.629);
+  padding: 10px 0;
 }
 
 .navBar img {
   width: 150px;
   height: 50px;
+  margin-left: 10px;
 }
 
 .pages {
@@ -21,6 +25,7 @@
 }
 
 .pages a {
+  transition: all 0.3s ease;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.918);
 }
@@ -29,16 +34,19 @@
   color: white;
 }
 
-.contactPg {
-  border: 1px solid white;
-  padding: 15px 20px;
-  border-radius: 10px;
-  transition: all ease 1s;
+.pages a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
-.contactPg a {
-  color: white;
+.contactPg {
+  border: 1px solid white;
+  padding: 5px 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  transition: all ease 1s;
   text-decoration: none;
+  color: white;
 }
 
 .contactPg:hover {

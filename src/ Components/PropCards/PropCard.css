@@ -1,27 +1,7 @@
-.props-cont {
-  width: 90%;
-  margin: 70px auto;
-}
-
-.props-cont h1 {
-  font-size: 24px;
-  color: rgb(34, 33, 33);
-  margin: 10px 0px !important;
-}
-
-.view {
-  margin-top: 0px;
-  font-weight: 300;
-  font-size: 15px;
-  text-decoration: underline;
-  color: rgb(60, 59, 59);
-  margin-bottom: 50px;
-}
-
 .prop-cont {
   background-color: #ffffff;
   box-shadow: 5px 6px 7px #88888829;
-  width: 100%;
+  width: 250px;
   padding-bottom: 20px;
   margin-right: 20px;
   border-radius: 15px;
@@ -45,9 +25,12 @@
 
 .image-cont {
   width: 100%;
-  position: relative;
   max-height: 200px;
   overflow: hidden;
+}
+
+.image-cont {
+  position: relative;
 }
 
 .image-cont h3 {
@@ -81,7 +64,6 @@
 }
 
 .prop-cont img {
-  transition: all 10s ease;
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
