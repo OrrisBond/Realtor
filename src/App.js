@@ -5,17 +5,20 @@ import Navbar from "./ Components/Navbar/Navbar";
 import PropCards from "./ Components/PropCards/PropCards";
 import { Routes, Route } from "react-router-dom";
 import SearchHome from "./ Components/SeacrhPage/SearchHome";
+import { HouseContext } from "./ Components/FillterBar/HouseContextProvider";
+import { useContext } from "react";
+import Contact from "./ Components/Contact/Contact";
 
 function App() {
+  const { hero } = useContext(HouseContext);
+
   return (
     <div>
-      <div className="background">
-        <Navbar />
-        <Hero />
-      </div>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="searchHome" element={<SearchHome />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>

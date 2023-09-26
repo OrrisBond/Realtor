@@ -1,9 +1,12 @@
 import React from 'react'
 import './Footer.css'
+import footIcon from './360_F_521570502_jcHPUS0EGZ6nZSLVzs8gFEH9vo8F7f0Q.jpg'
 import {FaTwitter, FaFacebookF , FaGooglePlusG, FaLinkedin, FaYoutube} from 'react-icons/fa'
 
 
 const Footer = () => {
+
+  const date = new Date().getFullYear()
   return (
     <footer>
         <div className="footer-content">
@@ -18,7 +21,9 @@ const Footer = () => {
             </ul>
         </div>
         <div class="footer-bottom">
-            <p>copyright &copy; <a href="#">Micro Genesis</a>  </p>
+        <img src={footIcon} alt="" style={{height: '150px', width: '50%'}}/>
+      <img src={footIcon} alt="" style={{height: '150px', width: '50%'}}/>
+            <p>copyright &copy; {date} <a href="#">Micro Genesis</a>  </p>
                     <div class="footer-menu">
                       <ul class="f-menu">
                         <li><a href="">Home</a></li>
@@ -28,7 +33,7 @@ const Footer = () => {
                       </ul>
                     </div>
         </div>
-
+      
     </footer>
   )
 }

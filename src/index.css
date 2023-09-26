@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sansita", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(240, 245, 249);
@@ -23,10 +23,11 @@ code {
     url(../public/heroImg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   width: 100vw;
   min-height: 600px;
   margin-bottom: 20px;
+  position: absolute;
+  z-index: -1;
 }
 
 .slider {

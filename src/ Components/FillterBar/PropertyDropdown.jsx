@@ -4,26 +4,32 @@ import { Menu } from '@headlessui/react'
 import {HouseContext} from './HouseContextProvider'
 
 const PropertyDropdown = () => {
-  const { property, setProperty, properties } = useContext(HouseContext)
+
+  const { property, setProperty, properties, handleClicked } = useContext(HouseContext)
   const [isOpen, setIsOpen] = useState(false)
-  return <Menu as='div' className='dropdown relative' >
-    <Menu.Button onClick={()=>setIsOpen(!isOpen)} className=' dropdown-btn w-full text-left' >
-      <RiHome5Line className='dropdown-icon-primary' />
+  return <Menu as='div' className='dropdown' >
+    <Menu.Button onClick={()=>setIsOpen(!isOpen)} className=' dropdown-btn' >
+      <RiHome5Line className='dropdown-icon' />
       <div className='container-dropdown'>
         <div className='selector'>
-        <div className='text-[15px] font-medium leading-tight'>{property }</div>
-        <div className='text-[13px]'>Select your place</div>
+        <div >{property }</div>
+        <div >Select your place</div>
         </div>
-        {isOpen ? ( <RiArrowUpSLine className='dropdown-icon-secondary'/> ): ( 
+        {isOpen ? ( <RiArrowUpSLine className='dropdown-icon'/> ): ( 
           
-         <RiArrowDownSLine className = 'dropdown-icon-secondary'/>)}
+         <RiArrowDownSLine className = 'dropdown-icon'/>)}
+
       </div>
     </Menu.Button>
     <Menu.Items className='dropdown-menu'>
       {properties.map((property, index) => {
         return (
           <Menu.Item as='li' key={index}
-            onClick={()=>setProperty(property)}
+            onClick={() => {
+              setProperty(property)
+              handleClicked()
+            }}
+
             className='cursor-pointer hover:text-orange-400 transition'>
             {property}
           </Menu.Item>
