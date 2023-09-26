@@ -1,10 +1,14 @@
 import React from 'react'
 import PropCards from './PropCards/PropCards'
+import Hero from './Hero/Hero'
+
 
 
 function Home() {
   return (
-      <div>
+
+    <div>
+      <Hero/>
       <PropCards/>
       <PropCards />
       <PropCards />

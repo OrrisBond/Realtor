@@ -14,7 +14,6 @@ const HouseContextProvider = ({ children }) => {
     const [price, setPrice] = useState('Price range (any)')
 
     const [loading, setLoading] = useState(false)
-    const [hero, setHero] = useState(false)
     
     useEffect(() => {
         const allCountries = houses.map((house) => {
@@ -44,15 +43,17 @@ const HouseContextProvider = ({ children }) => {
             return str.split(' ').includes('(any)')
         }
 
-        console.log (isDefault(country))
 
-        const minPrice =parseInt(price.split(' ')[0])
+        console.log(isDefault(country))
+
+        const minPrice = parseInt(price.split(' ')[0])
         const maxPrice = parseInt(price.split(' ')[2])
 
-        console.log(minPrice , maxPrice)
+        console.log(minPrice, maxPrice)
 
         const newHouses = housesData.filter((house
-        )=> {
+        ) => {
+
             const housePrice = parseInt(house.price)
             
 
@@ -85,7 +86,11 @@ const HouseContextProvider = ({ children }) => {
 
 
             if (!isDefault(country) && !isDefault(property) && isDefault(price)) {
+
+                return house.country === country && house.type === property
+
                     return house.country === country && house.type === property
+
             }
 
             if (!isDefault(country) && isDefault(property) && !isDefault(price)) {
@@ -97,26 +102,21 @@ const HouseContextProvider = ({ children }) => {
 
             if (isDefault(country) && !isDefault(property) && !isDefault(price)) {
                 if (house.price >= minPrice && housePrice <= maxPrice) {
-                    return house.type === property}
+
+                    return house.type === property
+                }
             }
             
         })
-         console.log(newHouses)
+        console.log(newHouses)
         setTimeout(() => {
             
             return (newHouses.length < 1 ? setHouses([]) : setHouses(newHouses),
-            setLoading(false))
+                setLoading(false))
             
         }, 1000)
     }
 
-    const heroSearch = () => {
-        setHero(true)
-    }
-
-    const heroFillter = () => {
-        setHero(false)
-    }
    
     
     return <HouseContext.Provider value={{
@@ -131,10 +131,8 @@ const HouseContextProvider = ({ children }) => {
         houses,
         loading,
         handleClicked,
-        loading,
-        hero,
-        heroSearch,
-        heroFillter
+        loading
+
     }}>
     {children}
   </HouseContext.Provider>;

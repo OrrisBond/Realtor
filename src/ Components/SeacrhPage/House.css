@@ -1,4 +1,5 @@
 .container {
+  margin-top: 50px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -41,17 +42,14 @@
   transform: scale(1.05);
 }
 
-.image-container {
+.image-cont {
   width: 100%;
   max-height: 200px;
   overflow: hidden;
-}
-
-.img-cont {
   position: relative;
 }
 
-.img-cont h3 {
+.image-cont h3 {
   position: absolute;
   left: 8px;
   font-size: small;
@@ -61,9 +59,14 @@
   padding: 5px 10px;
 }
 
+.image-cont img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
 .property-container {
   width: 95%;
-  margin: 50px auto;
+  margin: 200px auto 10px auto;
 }
 
 .property-container h1 {

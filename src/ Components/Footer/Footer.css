@@ -1,5 +1,5 @@
 footer {
-  background: #111;
+  background: #271d2e;
   position: absolute;
   width: 100%;
   padding-top: 40px;
@@ -56,12 +56,13 @@ footer {
 }
 
 .footer-bottom {
-  background: #000;
+  background: #271d2e;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   text-align: center;
 }
 .footer-bottom p {
+  padding-left: 10px;
   float: left;
   font-size: 14px;
   word-spacing: 2px;

@@ -1,12 +1,12 @@
 import React from 'react'
-import './PropCards.css'
+import './PropCard.css'
 import {BiBath, BiBed, BiArea} from 'react-icons/bi'
  
 const PropCard = () => {
   return (
       <div className='prop-cont'>
-          <div className='img-cont'>
-              <h3>New 10hrs ago</h3>
+          <div className='image-cont'>
+              <h3 className='badge'>New 10hrs ago</h3>
           <img src="https://media.istockphoto.com/id/1281554848/photo/dream-home-luxury-house-success-suburban-house.webp?b=1&s=170667a&w=0&k=20&c=LHZ-3vBXAM_lu-cvruFkT12lO8KSxz1ZVCMo-d8rCI4=" alt="" />
          </div>
           <div className='details'>
