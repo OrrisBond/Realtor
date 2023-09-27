@@ -8,6 +8,7 @@ import SearchHome from "./ Components/SeacrhPage/SearchHome";
 import { HouseContext } from "./ Components/FillterBar/HouseContextProvider";
 import { useContext } from "react";
 import Contact from "./ Components/Contact/Contact";
+import { motion } from "framer-motion";
 
 function App() {
   const { hero } = useContext(HouseContext);

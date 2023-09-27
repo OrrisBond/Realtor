@@ -1,5 +1,5 @@
 import React from 'react'
-import './PropCard.css'
+import './PropCards.css'
 import {BiBath, BiBed, BiArea} from 'react-icons/bi'
  
 const PropCard = () => {
@@ -27,7 +27,7 @@ const PropCard = () => {
                   </div>
                   <div className='essentials'>
                       <div className='quant'>
-                  <BiBath/><p>6</p>
+                  <BiBath /><p>6</p>
                       </div>
                       <h3>Bathrooms</h3>
                   </div>

@@ -48,11 +48,11 @@ footer {
   transition: color 0.4s ease;
 }
 .socials a:hover .icon-footer {
-  color: aqua;
+  color: #cc8fe2;
 }
 
 .socials a:hover {
-  border: 1px solid aqua;
+  border: 1px solid #cc8fe2;
 }
 
 .footer-bottom {
@@ -69,7 +69,7 @@ footer {
   text-transform: capitalize;
 }
 .footer-bottom p a {
-  color: #44bae8;
+  color: #cc8fe2;
   font-size: 16px;
   text-decoration: none;
 }
@@ -93,7 +93,7 @@ footer {
   text-decoration: none;
 }
 .footer-menu ul li a:hover {
-  color: #27bcda;
+  color: #cc8fe2;
 }
 
 @media (max-width: 500px) {

@@ -6,9 +6,9 @@ import { HiOfficeBuilding, } from 'react-icons/hi'
 import {MdCall, MdEmail} from 'react-icons/md'
 
 const Contact = () => {
-  return (
+  return (<div>
+    <div className='backg'></div>
     <div  className="contact-page">
-        <NavBar />
         <div className='contact-hero'>
               <h1>Contact Us</h1>
            </div>
@@ -20,23 +20,23 @@ const Contact = () => {
         <div className='contact-wrapper'>
           <div className='contact-left'>
             <div className='left-sub'>
-              <HiOfficeBuilding size={34}/>
+              
               <div className='left-text-grp'>
-                <h3>Office Address</h3>
+                <h3><HiOfficeBuilding className='icon'/> Office Address</h3>
                 <p>klm 12 off, Lagos-Ibadan express way. Beside mfm prayer city. Magboro. Ogun State, Lagos Nigeria</p>
               </div>
             </div>
             <div className='left-sub'>
-              <MdEmail size={20}/>
-              <div className='left-text-grp'>
-                <h3>Email</h3>
+                <div className='left-text-grp'>
+              
+                <h3><MdEmail className='icon'/> Email  </h3>
                 <p>info@microgenesis.com</p>
               </div>
             </div>
             <div className='left-sub'>
-              <MdCall size={20}/>
+              
               <div className='left-text-grp'>
-                <h3>Call</h3>
+                <h3><MdCall className='icon'/> Call</h3>
                 <p>+12343212343234, +1234321234323</p>
               </div>
             </div>
@@ -57,6 +57,8 @@ const Contact = () => {
         </section>
         <Footer />
     </div>
+  </div>
+
   )
 }
 

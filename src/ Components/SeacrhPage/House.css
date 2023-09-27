@@ -53,8 +53,9 @@
   position: absolute;
   left: 8px;
   font-size: small;
-  background-color: rgb(1, 77, 77);
+  background-color: #105daa;
   color: white;
+  z-index: 20;
   border-radius: 15px;
   padding: 5px 10px;
 }
@@ -66,7 +67,7 @@
 
 .property-container {
   width: 95%;
-  margin: 200px auto 10px auto;
+  margin: 150px auto 10px auto;
 }
 
 .property-container h1 {

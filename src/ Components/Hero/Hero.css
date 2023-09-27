@@ -1,13 +1,26 @@
+.background {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.193)
+    ),
+    url(https://www.keoutdoordesign.com/wp-content/uploads/2019/05/ke_outdoor_design_tende_a_rullo_screeny_110_GPZ_tens_T_S60_TO_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 600px;
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: -1;
+}
+
 .hero-cont {
-  position: sticky;
-  top: 0;
-  width: 90%;
-  margin: 0px auto 80px auto;
+  width: 100%;
   text-align: center;
   color: white;
-  flex-direction: column;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  overflow: none;
 }
 
 .hero-cont h1 {
@@ -23,7 +36,7 @@
 
 .searchBar {
   cursor: pointer;
-  margin-top: 60px;
+  margin: 60px auto 210px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -78,12 +91,12 @@
 }
 
 .clicked {
-  color: gray !important;
+  color: #04395e !important;
   background-color: white !important;
 }
 
 .searchBar button {
-  background-color: gray;
+  background-color: #04395e;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -103,7 +116,7 @@
 }
 
 .searchIcon {
-  color: gray;
+  color: #04395e;
   font-size: x-large;
 }
 .searchInput input {
@@ -120,7 +133,7 @@
 }
 
 .searchInput button {
-  background-color: gray;
+  background-color: #04395e;
   border-radius: 10px;
   cursor: pointer;
 }
