@@ -4,6 +4,7 @@ import { Menu } from '@headlessui/react'
 import {HouseContext} from './HouseContextProvider'
 
 const PropertyDropdown = () => {
+
   const { property, setProperty, properties, handleClicked } = useContext(HouseContext)
   const [isOpen, setIsOpen] = useState(false)
   return <Menu as='div' className='dropdown' >
@@ -17,6 +18,7 @@ const PropertyDropdown = () => {
         {isOpen ? ( <RiArrowUpSLine className='dropdown-icon'/> ): ( 
           
          <RiArrowDownSLine className = 'dropdown-icon'/>)}
+
       </div>
     </Menu.Button>
     <Menu.Items className='dropdown-menu'>
@@ -27,6 +29,7 @@ const PropertyDropdown = () => {
               setProperty(property)
               handleClicked()
             }}
+
             className='cursor-pointer hover:text-orange-400 transition'>
             {property}
           </Menu.Item>

@@ -4,13 +4,14 @@ import { HouseContext } from "../FillterBar/HouseContextProvider";
 import SearchBar from './SearchBar';
 import 'animate.css';
 
-const Hero = () => {
 
+const Hero = () => {
     return (
         <div>
             <div className="background">
             </div>
         <div className='hero-cont'>
+
           <div>
           <h1 className="animate__animated animate__bounceInDown"
           >We Sell Homes you Can Only Dream About</h1>
@@ -19,8 +20,6 @@ const Hero = () => {
             </div>
             <SearchBar />
         </div>
-     
-            
     )
 }
 

@@ -5,6 +5,7 @@ import {HouseContext} from './HouseContextProvider'
 
 const PriceRangeDropdown = () => {
   const { price, handleClicked, setPrice } = useContext(HouseContext)
+
   const [isOpen, setIsOpen] = useState(false)
 
   const prices = [
@@ -39,6 +40,7 @@ const PriceRangeDropdown = () => {
       value: '220000 - 250000'
     },
   ]
+
   return <Menu as='div' className='dropdown' >
     <Menu.Button onClick={()=>setIsOpen(!isOpen)} className=' dropdown-btn' >
       <RiWallet3Line className='dropdown-icon' />
@@ -50,6 +52,7 @@ const PriceRangeDropdown = () => {
         {isOpen ? ( <RiArrowUpSLine className='dropdown-icon' />
           
           ) : ( <RiArrowDownSLine className='dropdown-icon'/> )}
+
       </div>
     </Menu.Button>
     <Menu.Items className='dropdown-menu'>
@@ -60,6 +63,7 @@ const PriceRangeDropdown = () => {
               setPrice(price.value)
               handleClicked()
             }}>
+
             {price.value}
           </Menu.Item>
         )
