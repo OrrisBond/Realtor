@@ -15,21 +15,6 @@ code {
     monospace;
 }
 
-.background {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(0, 0, 0, 0.787)
-    ),
-    url(../public/heroImg.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  min-height: 600px;
-  margin-bottom: 20px;
-  position: absolute;
-  z-index: -1;
-}
-
 .slider {
   display: flex;
 }

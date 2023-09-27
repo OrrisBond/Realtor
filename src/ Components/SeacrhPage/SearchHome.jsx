@@ -10,7 +10,7 @@ const SearchHome = () => {
     <div className='dummy-cont'>
       <Search/>
         <HouseList/>
-    </div>
+    </div> 
   </div>
 
   

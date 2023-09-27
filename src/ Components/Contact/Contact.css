@@ -1,82 +1,110 @@
-
-.contact-page {
-    background: #407cd5;
+.backg {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.787)
+    ),
+    url(https://www.arnolditkin.com/cms/thumbnails/34/1080x350/images/blog/Woman-Using-Cell-Phone.2203161242513.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 600px;
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: -1;
 }
 
 .contact-hero {
-    /* background: red; */
-    font-size: 40px;
-    padding: 20px;
+  /* background: red; */
+  font-size: 40px;
+  padding: 30px;
 }
 
 .contact-hero h1 {
-    text-align: center;
+  text-align: center;
+  margin-top: 70px;
+  color: #fff;
 }
 
 section {
-    background-color: #fff;
-    padding: 40px 10px;
+  background-color: #fff;
+  padding: 40px 10px;
 }
 
 section .parent {
-    width: 90%;
-    margin: 10px auto;
+  width: 90%;
+  margin: 40px auto;
 }
 
 .contact-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
 }
 
 .contact-wrapper .contact-left {
-    width: 30%;
+  width: 30%;
 }
 
 .contact-left .left-sub {
-    display: flex;
+  display: flex;
+  align-items: flex-start;
 }
-
 
 .contact-wrapper .contact-right {
-    width: 60%;
+  width: 60%;
 }
 
-.contact-right .right-sub{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.contact-right .right-sub {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .right-sub input {
-    width: 100%;
-    margin: 10px 0;
-    padding: 15px;
-    border: 1px solid rgb(230, 230, 230);
-    border-radius: 5px;
-    transition: all .3s ease;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .right-sub textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 15px;
-    height: 150px;
-    border: 1px solid rgb(230, 230, 230);
-    border-radius: 5px;
-    transition: all .3s ease;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  height: 150px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .right-sub textarea:focus {
-    outline: none;
-    border: 1px solid #407cd5;
+  outline: none;
+  border: 1px solid #407cd5;
 }
 
 .right-sub input:focus {
-    outline: none;
-    border: 1px solid #407cd5;
+  outline: none;
+  border: 1px solid #407cd5;
 }
 
-.right-sub #name, #email {
-    width: 45%;
+.right-sub input[type="submit"] {
+  background-color: #407cd5;
+  color: #fff;
+  cursor: pointer;
+}
+
+.right-sub input[type="submit"]:hover {
+  background-color: #04395e;
+}
+
+.right-sub #name,
+#email {
+  width: 45%;
+}
+
+.left-text-grp .icon {
+  font-size: x-large;
+  color: #04395e;
 }

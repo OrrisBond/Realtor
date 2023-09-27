@@ -4,7 +4,11 @@
 }
 
 .back {
-  background-image: url(https://img.lovepik.com/background/20211022/large/lovepik-city-ground-background-image_401915207.jpg);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.689)
+    ),
+    url(https://kingfisherestate.co.za/wp-content/uploads/elementor/thumbs/Kingfisher-View-4-Birds-Eye-View-Rev-2-q90ojb2fk1yl7y1tbnesifyzhzigvr6iw3c7s0fmo8.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -16,12 +20,13 @@
 
 .fillter-cont {
   position: sticky;
-  top: 10px;
-  margin: 0px auto 100px auto;
+  top: 0px;
+  margin: 0px auto 50px auto;
   display: flex;
   justify-content: center;
+  transition: all ease 0.1s;
   width: 100%;
-  max-height: 50px;
+  height: 60px;
   z-index: 87;
 }
 
@@ -88,7 +93,7 @@
 .f-searchBar input {
   outline: none;
   border: none;
-  height: 60px;
+  height: 95%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
