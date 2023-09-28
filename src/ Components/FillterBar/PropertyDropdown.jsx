@@ -11,8 +11,7 @@ const PropertyDropdown = () => {
       <RiHome5Line className='dropdown-icon' />
       <div className='container-dropdown'>
         <div className='selector'>
-        <div >{property }</div>
-        <div >Select your place</div>
+        <div className='toIcon'>{property }</div>
         </div>
         {isOpen ? ( <RiArrowUpSLine className='dropdown-icon'/> ): ( 
           

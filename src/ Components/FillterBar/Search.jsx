@@ -9,7 +9,7 @@ const Search = () => {
 
   document.addEventListener("scroll", (event) => {
     console.log(`scrollTop: ${window.scrollY}`);
-    if (window.scrollY >= 155) {
+    if (window.scrollY >= 145) {
       setScrolled(true)
     } else {
       setScrolled(false)
@@ -17,11 +17,13 @@ const Search = () => {
   });
   
 
-  return  <div className={`fillter-cont ${scrolled ? 'scrolled' : ''}`}>
+  return  <div className={`fillter-cont animate__animated animate__fadeInRightBig ${scrolled ? 'scrolled' : ''}`}>
     <SearchBar/>
+    <div className='dropdowns'>
     <CountryDropdown />
     <PropertyDropdown />
-    <PriceRangeDropdown />
+    <PriceRangeDropdown /> 
+    </div>
   </div>
 };
 

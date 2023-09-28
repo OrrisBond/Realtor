@@ -1,5 +1,5 @@
 .props-cont {
-  width: 90%;
+  width: 97%;
   margin: 70px auto;
 }
 
@@ -122,4 +122,34 @@
 .quant :nth-child(1) {
   margin-right: 5px;
   color: #2a48a6;
+}
+
+@media (max-width: 1010px) {
+  .slider {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+  }
+  .prop-cont {
+    margin-top: 30px;
+  }
+
+  .view {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 595px) {
+  .slider {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: space-evenly;
+  }
+  .prop-cont {
+    margin-top: 30px;
+  }
+
+  .view {
+    margin-bottom: 10px !important;
+  }
 }

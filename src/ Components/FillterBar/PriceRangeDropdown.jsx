@@ -44,8 +44,7 @@ const PriceRangeDropdown = () => {
       <RiWallet3Line className='dropdown-icon' />
       <div className='container-dropdown'>
         <div className='selector'>
-        <div >{price}</div>
-        <div>Choose your price </div>
+        <div className='toIcon'>{price}</div>
         </div>
         {isOpen ? ( <RiArrowUpSLine className='dropdown-icon' />
           

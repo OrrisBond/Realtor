@@ -77,3 +77,21 @@
 .property-container p {
   margin-top: 0px;
 }
+
+@media (max-width: 1200px) {
+  .house-cont {
+    width: 30%;
+  }
+}
+
+@media (max-width: 830px) {
+  .house-cont {
+    width: 45%;
+  }
+}
+
+@media (max-width: 651px) {
+  .house-cont {
+    width: 70%;
+  }
+}

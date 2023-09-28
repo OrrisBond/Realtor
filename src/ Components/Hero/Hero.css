@@ -119,6 +119,7 @@
   color: #04395e;
   font-size: x-large;
 }
+
 .searchInput input {
   position: sticky;
   top: 40px;
@@ -136,4 +137,86 @@
   background-color: #04395e;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.searchbar2 {
+  background-color: white;
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: none;
+  transition: all ease 0.7s;
+}
+
+.h-searchBar {
+  display: flex;
+  background-color: white;
+  padding: 0px 5px 0px 20px;
+  height: 100%;
+  width: 30%;
+  align-items: center;
+  border: 1px solid #04395e;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.h-searchBar input {
+  outline: none;
+  border: none;
+  width: 95%;
+  height: 90%;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.h-searchIcon {
+  color: white;
+  background-color: #04395e;
+  padding: 12px;
+  font-size: larger;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.scroller {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .hero-cont h1 {
+    font-size: 50px;
+  }
+
+  .hero-cont p {
+    font-size: 15px;
+  }
+
+  .searchBar {
+    width: 60%;
+  }
+
+  .h-searchBar {
+    width: 50%;
+  }
+}
+
+@media (max-width: 905px) {
+  .hero-cont h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 595px) {
+  .searchBar {
+    width: 80%;
+  }
+
+  .h-searchBar {
+    width: 60%;
+  }
 }
