@@ -6,13 +6,16 @@ import { AiOutlineClose } from 'react-icons/ai'
 
 
 
+
 const Navbar = () => {
+
 const [open, setOpen] = useState(true)
   
 const OpenMenu = () => {
    setOpen (!open)
 }
   
+
   return (
       <nav className='navBar'>
           <img src="./logo.png" alt="" />
