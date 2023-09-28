@@ -25,6 +25,7 @@
   display: flex;
   justify-content: center;
   transition: all ease 0.1s;
+  align-items: center;
   width: 100%;
   height: 60px;
   z-index: 87;
@@ -57,6 +58,7 @@
   border-radius: 15px;
   cursor: pointer;
   margin: 0 10px;
+  position: relative;
 }
 
 .dropdown-menu {
@@ -65,8 +67,9 @@
   color: black;
   margin-top: 5px;
   padding: 20px;
-  position: relative;
+  position: absolute;
   z-index: 999;
+  width: 14%;
   border-radius: 10px;
 }
 
@@ -106,5 +109,54 @@
   border-radius: 50%;
   margin-left: 10px;
   cursor: pointer;
+}
+
+
+.dropdowns {
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .fillter-cont {
+    width: 100%;
+  }
+
+  .f-searchBar {
+    padding: 5px;
+    height: 75%;
+  }
+
+  .container-dropdown {
+    width: 100%;
+  }
+
+  .dropdowns {
+    justify-content: space-around;
+  }
+
+  .f-searchBar input {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-left: 20px;
+  }
+
+  .dropdown-btn {
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 830px) {
+  .selector {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .toIcon {
+    display: none;
+  }
+
+  .dropdown-btn {
+    margin: 10px 0 0 0;
+  }
 }
 

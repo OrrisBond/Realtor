@@ -22,6 +22,7 @@
   list-style-type: none;
   width: 50%;
   height: 100%;
+  transition: all ease 1s;
 }
 
 .pages a {
@@ -51,4 +52,35 @@
 
 .contactPg:hover {
   background-color: #04395e;
+}
+
+#menu-icon {
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .pages {
+    background-color: white;
+    position: absolute;
+    flex-direction: column;
+    top: 60px;
+    padding: 20px 10px;
+    width: 100px;
+    text-align: center;
+    right: -200px;
+  }
+
+  .open {
+    right: 10px;
+  }
+
+  .pages a {
+    color: #04395e;
+  }
 }

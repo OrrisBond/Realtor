@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import SearchPrompt from './SearchPrompt'
 import './Hero.css'
 import { BiSearch } from 'react-icons/bi'
+import 'animate.css';
+
 
 
 const SearchBar = () => {
@@ -17,7 +19,7 @@ const SearchBar = () => {
         setTyped(e.target.value)
     }
   return (
-    <div className='searchBar'>
+    <div className='searchBar  animate__animated animate__zoomInUp'>
               <div>
                   <button className={clicked ? 'left clicked' : 'left'} onClick={clickMe}>Buy</button>
                   <button className={clicked ? 'right ' : 'right clicked'} onClick={clickMe}>Rent</button>
