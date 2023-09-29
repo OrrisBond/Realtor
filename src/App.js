@@ -9,6 +9,7 @@ import { HouseContext } from "./ Components/FillterBar/HouseContextProvider";
 import { useContext } from "react";
 import Contact from "./ Components/Contact/Contact";
 import { motion } from "framer-motion";
+import Popup from "./ Components/Popup/Popup";
 
 function App() {
   const { hero } = useContext(HouseContext);
@@ -16,6 +17,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      {/* <Popup /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="searchHome" element={<SearchHome />} />

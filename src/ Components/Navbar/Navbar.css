@@ -74,9 +74,11 @@
     width: 100px;
     text-align: center;
     right: -200px;
+    display: none;
   }
 
   .open {
+    display: block;
     right: 10px;
   }
 

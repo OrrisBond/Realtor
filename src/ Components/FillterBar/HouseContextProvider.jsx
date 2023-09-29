@@ -8,6 +8,8 @@ const HouseContextProvider = ({ children }) => {
     const [country, setCountry] = useState('Location (any)')
     const [countries, setCountries] = useState([])
 
+    const [isOpen, setIsOpen] = useState(false)
+
     const [property, setProperty] = useState('Property Type (any)')
     const [properties , setProperties] = useState([])
     
@@ -124,7 +126,9 @@ const HouseContextProvider = ({ children }) => {
         houses,
         loading,
         handleClicked,
-        loading
+        loading,
+        isOpen,
+        
     }}>
     {children}
   </HouseContext.Provider>;

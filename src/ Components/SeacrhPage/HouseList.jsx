@@ -6,11 +6,14 @@ import { ImSpinner2 } from 'react-icons/im'
 import './House.css'
 import PropCard from '../PropCards/PropCard'
 import { HouseContext } from "../FillterBar/HouseContextProvider";
+import Popup from "../Popup/Popup";
 
 
 const HouseList = () => {
-  const { houses, loading, country } = useContext(HouseContext)
+  const { houses, loading, country, isOpen , } = useContext(HouseContext)
   const numbers = houses.length
+
+  
   
   if (loading) {
      return (<ImSpinner2 />)
@@ -24,11 +27,11 @@ const HouseList = () => {
     <div className="property-container">
     <h1>{country} real Estate Properties for sale</h1>
       <p>Properties Found {numbers}</p>
-      </div>
+    </div>
       <div  className="container">
         {houses.map((house, index) => {
           return (
-              <House house={house}/>
+            <House house={house}  />
           )
         })}
     </div>
