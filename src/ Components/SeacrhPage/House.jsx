@@ -1,10 +1,10 @@
 import React from 'react';
 import {BiBed , BiBath , BiArea} from 'react-icons/bi'
 
-const House = ({ house }) => {
+const House = ({ house,Popup }) => {
   const { type, country, address, bedrooms, bathrooms, surface, price} = house
-  return <div className='house-cont'>
-          <div className='image-cont'>
+  return <div className='house-cont'  >
+          <div className='image-cont' >
               <h3>New 10hrs ago</h3>
               <img src="https://media.istockphoto.com/id/1281554848/photo/dream-home-luxury-house-success-suburban-house.webp?b=1&s=170667a&w=0&k=20&c=LHZ-3vBXAM_lu-cvruFkT12lO8KSxz1ZVCMo-d8rCI4=" alt="" />
          </div>

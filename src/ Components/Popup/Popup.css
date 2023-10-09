@@ -1,0 +1,90 @@
+.transluscent {
+  background-color: rgba(0, 0, 0, 0.38);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+}
+
+.m-cont {
+  position: fixed;
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 15px;
+  padding: 40px 20px 5px 20px;
+  top: 70px;
+  left: 25%;
+  text-align: center;
+}
+
+.m-cont h1 {
+  margin-bottom: 0;
+}
+
+.m-cont h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.p-form {
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px auto; */
+  height: 50vh;
+  width: 35%;
+}
+
+.p-form input {
+  padding: 10px;
+  border: black 1px solid;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+.p-form button {
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(55, 51, 51);
+  color: white;
+}
+
+.p-form textarea {
+  height: 25%;
+  margin-bottom: 6px;
+}
+.p-cont {
+  display: flex;
+  justify-content: space-around;
+}
+
+.p-cont h2 {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.p-cont p {
+  margin-top: 5px;
+}
+
+.p-cont img {
+  height: 50%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.p-details {
+  width: 50%;
+}
+
+.x-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}

@@ -17,8 +17,7 @@ const Hero = () => {
       setScroller(false)
     }
   });
-
-const Hero = () => {
+  let home = 'roman'
     return (
         <div>
             <div className="background">
