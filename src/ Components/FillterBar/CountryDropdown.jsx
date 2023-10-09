@@ -5,6 +5,7 @@ import { HouseContext } from './HouseContextProvider'
 import './Search.css'
 
 const CountryDropdown = () => {
+
   const { country,countries,setCountry,handleClicked} = useContext(HouseContext)
   const [isOpen, setIsOpen] = useState(false)
   return <Menu as='div' className='dropdown relative' >
@@ -15,6 +16,7 @@ const CountryDropdown = () => {
         <div className='toIcon'>{country}</div>
         </div>
         {isOpen ? (<RiArrowUpSLine className='dropdown-icon'/>) : (<RiArrowDownSLine className='dropdown-icon'/>)}
+
       </div>
     </Menu.Button>
     <Menu.Items className='dropdown-menu'>
@@ -28,7 +30,7 @@ const CountryDropdown = () => {
             }}>
             {country}
           </Menu.Item>
-      
+
         )
       })}
     </Menu.Items>

@@ -5,6 +5,7 @@ import SearchBar from './SearchBar';
 import 'animate.css';
 import SearchBar2 from './SearchBar2';
 
+
 const Hero = () => {
     const [scroller, setScroller] = useState(false)
 
@@ -16,14 +17,13 @@ const Hero = () => {
       setScroller(false)
     }
   });
-
   let home = 'roman'
-
     return (
         <div>
             <div className="background">
             </div>
         <div className='hero-cont'>
+
           <div>
           <h1 className="animate__animated animate__zoomInDown"
           >We Sell Homes you Can Only Dream About</h1>
@@ -35,8 +35,6 @@ const Hero = () => {
                 <SearchBar2/>
             </div>
         </div>
-     
-            
     )
 }
 

@@ -1,4 +1,6 @@
+
 import React, { useContext, useState } from 'react';
+
 import  CountryDropdown from './CountryDropdown'
 import  PropertyDropdown from './PropertyDropdown'
 import PriceRangeDropdown from './PriceRangeDropdown'
@@ -25,6 +27,7 @@ const Search = () => {
     <PriceRangeDropdown /> 
     </div>
   </div>
+
 };
 
 export default Search;
