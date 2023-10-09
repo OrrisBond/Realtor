@@ -17,6 +17,8 @@ const Hero = () => {
     }
   });
 
+  let home = 'roman'
+
     return (
         <div>
             <div className="background">
